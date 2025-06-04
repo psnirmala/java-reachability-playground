@@ -1,4 +1,4 @@
-name: Workflow to check security vulnerabilities using snyk--
+name: Workflow to check security vulnerabilities using snyk--using snyk token
 on: push
 jobs:
   security:
