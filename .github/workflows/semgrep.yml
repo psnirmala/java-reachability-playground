@@ -1,12 +1,6 @@
-name: Semgrep Full Scan
+name: Semgrep Full Scan----ne2
 
-on:
-  workflow_dispatch:
-    branches:
-      - main
-  schedule:
-    - cron:  '0 1 * * 6'
-
+on: push
 jobs:
 
   semgrep-full:
