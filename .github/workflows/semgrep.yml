@@ -35,4 +35,4 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: report.sarif
-          run-id: ${{ github.event.workflow_run.id }}
+         
