@@ -1,12 +1,5 @@
-on:
-  workflow_dispatch:
-  pull_request: {}
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/semgrep.yml
-name: Semgrep----test---new1
+name: Semgrep----test---new2
+on: push
 jobs:
   buildmavenDepTree:
     runs-on: ubuntu-latest
