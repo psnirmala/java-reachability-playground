@@ -17,10 +17,7 @@ jobs:
       # step 2
       - name: full scan
         run: |
-          semgrep \
-            --sarif --output report.sarif \
-            --metrics=off \
-            --config="p/default"
+          semgrep ci
 
       # step 3
 
@@ -30,9 +27,5 @@ jobs:
           name: report.sarif
           path: report.sarif
 
-      # step 4
-      - name: Download report
-        uses: actions/download-artifact@v4
-        with:
-          name: report.sarif
+    
          
