@@ -40,6 +40,7 @@ jobs:
       - uses: actions/checkout@v4
       # Run the "semgrep ci" command on the command line of the docker image.
       - run: semgrep ci --code
+      - run: semgrep scan --json > findings.json
         env:
           # Connect to Semgrep AppSec Platform through your SEMGREP_APP_TOKEN.
           # Generate a token from Semgrep AppSec Platform > Settings
